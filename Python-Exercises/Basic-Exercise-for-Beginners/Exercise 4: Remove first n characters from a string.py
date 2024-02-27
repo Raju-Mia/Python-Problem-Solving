@@ -9,8 +9,24 @@ remove_chars("pynative", 2) so output must be native. Here, we need to remove th
 Note: n must be less than the length of the string.
 '''
 
+
+
+
+
+# Soluation 1
 def remove_chars(word, n):
-    print('Original string:', word)
+    new_word = word[n:]
+    return new_word
+
+
+a = remove_chars('pynative', 4)
+print("New wrod is: ", a)
+
+
+
+
+# Soluation 2
+def remove_chars(word, n):
     x = word[n:]
     return x
 
